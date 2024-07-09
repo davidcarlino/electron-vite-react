@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import UpdateElectron from '@/components/update'
-import logoVite from './assets/logo-vite.svg'
+import logoVite from './assets/itsd-cover.png'
 import logoElectron from './assets/logo-electron.svg'
 import './App.css'
 
@@ -9,28 +9,39 @@ function App() {
   return (
     <div className='App'>
       <div className='logo-box'>
-        <a href='https://github.com/electron-vite/electron-vite-react' target='_blank'>
+        <a href='https://ipartners.atlassian.net/servicedesk/customer/portals' target='_blank'>
           <img src={logoVite} className='logo vite' alt='Electron + Vite logo' />
-          <img src={logoElectron} className='logo electron' alt='Electron + Vite logo' />
+         
         </a>
       </div>
-      <h1>Electron + Vite + React</h1>
+      <h1>iPartners Self Service</h1>
       <div className='card'>
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          Fix Google Drive Not Working
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        <br></br>     <br></br>
+        <button onClick={() => setCount((count) => count + 1)}>
+          Fix Slack Not Working
+        </button>
+<br></br>     <br></br>
+        <button onClick={() => setCount((count) => count + 1)}>
+          Fix Taskbar Glitch
+        </button>
+        <br></br>     <br></br>
+        <button onClick={() => setCount((count) => count + 1)}>
+          Fix Google Drive Not Working
+        </button>
+        <br></br>     <br></br>     <br></br>
       </div>
       <p className='read-the-docs'>
-        Click on the Electron + Vite logo to learn more
+      Still Need Help? Click Below to Raise A Ticket
       </p>
-      <div className='flex-center'>
-        Place static files into the<code>/public</code> folder <img style={{ width: '5em' }} src='./node.svg' alt='Node logo' />
-      </div>
 
-      <UpdateElectron />
+      <a href='https://ipartners.atlassian.net/servicedesk/customer/portals' target='_blank'>
+      <button id="googleButton">Raise A Ticket</button>
+</a>
+   
+   
     </div>
   )
 }
