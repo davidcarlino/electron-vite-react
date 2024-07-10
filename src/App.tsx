@@ -6,6 +6,11 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const openPdf = () => {
+    window.electron.openFile('C:/temp/SpongeBob.pdf');
+  };
+
   return (
     <div className='App'>
       <div className='logo-box'>
@@ -20,7 +25,7 @@ function App() {
           Fix Google Drive Not Working
         </button>
         <br></br>     <br></br>
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button onClick={openPdf}>
           Fix Slack Not Working
         </button>
 <br></br>     <br></br>
@@ -28,9 +33,9 @@ function App() {
           Fix Taskbar Glitch
         </button>
         <br></br>     <br></br>
-        <button onClick={() => setCount((count) => count + 1)}>
+        <a href='https://ipartners.atlassian.net/servicedesk/customer/portals' target='_blank'>
           Fix Google Drive Not Working
-        </button>
+        </a>
         <br></br>     <br></br>     <br></br>
       </div>
       <p className='read-the-docs'>

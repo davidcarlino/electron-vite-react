@@ -1,9 +1,9 @@
 {
-  "name": "electron-vite-react",
-  "version": "2.2.0",
+  "name": "Self-Service-Tool",
+  "version": "1.0.1",
   "main": "dist-electron/main/index.js",
-  "description": "Electron Vite React boilerplate.",
-  "author": "草鞋没号 <308487730@qq.com>",
+  "description": "Self Service Tool",
+  "author": "David Carlino",
   "license": "MIT",
   "private": true,
   "debug": {
@@ -20,6 +20,7 @@
     "e2e": "playwright test"
   },
   "dependencies": {
+    "child_process": "^1.0.2",
     "electron-updater": "^6.1.8"
   },
   "devDependencies": {
