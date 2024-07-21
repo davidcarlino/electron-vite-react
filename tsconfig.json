@@ -20,8 +20,14 @@
       "@/*": [
         "src/*"
       ]
-    },
+    }
   },
-  "include": ["src", "electron"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "src", 
+    "electron",
+    "src/renderer"
+  ],
+  "references": [
+    { "path": "./tsconfig.node.json" }
+  ]
 }

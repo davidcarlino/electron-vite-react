@@ -1,8 +1,10 @@
 import { useCallback } from 'react';
 
+window.electron.invoke('open-browser', 'https://www.google.com');
+
 const OpenGoogle = () => {
   const openGoogle = useCallback(() => {
-    window.ipcRenderer.invoke('open-browser', 'https://www.google.com');
+    window.electron.invoke('open-browser', 'https://www.google.com');
   }, []);
 
   return (

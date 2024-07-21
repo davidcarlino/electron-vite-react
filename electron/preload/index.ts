@@ -23,6 +23,10 @@ contextBridge.exposeInMainWorld('ipcRenderer', {
   // ...
 })
 
+contextBridge.exposeInMainWorld('electron', {
+  openFile: (filePath: string) => ipcRenderer.send('open-file', filePath)
+});
+
 // --------- Preload scripts loading ---------
 function domReady(condition: DocumentReadyState[] = ['complete', 'interactive']) {
   return new Promise(resolve => {
